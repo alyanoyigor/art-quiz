@@ -1,0 +1,182 @@
+.settings-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 80vh;
+	gap: 50px;
+	padding-top: 50px;
+	height: 100%;
+}
+.settings__title {
+	padding-top: 24px;
+	font-size: $mobileH3;
+	font-weight: $light;
+	text-align: center;
+}
+.close-settings-button {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	font-size: $mobileH3;
+}
+.settings-block {
+	text-align: center;
+}
+.settings-block-title {
+	font-size: $mobileH2;
+	font-weight: $semiBold;
+	margin-bottom: 24px;
+}
+.volume__duration {
+	width: 100%;
+	max-width: 500px;
+	background: linear-gradient(
+		to right,
+		$main-color 0%,
+		$main-color 0%,
+		$second-color 0%,
+		$second-color 100%
+	);
+	-webkit-appearance: none;
+	appearance: none;
+	height: 4px;
+	outline: none;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #fff;
+		cursor: pointer;
+	}
+}
+.volume__buttons {
+	max-width: 500px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px auto 0 auto;
+
+	.volume__button {
+		width: 24px;
+		height: 24px;
+		color: $second-color;
+		:hover {
+			color: #fff;
+		}
+	}
+}
+.time-game-check__checkbox-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 16px;
+}
+.time-game-check__text,
+.time-game-adjust__number {
+	font-size: $mobileH3;
+}
+.time-game-adjust__number {
+	background: none;
+	color: #fff;
+	border: none;
+	text-align: center;
+	&:focus {
+		outline: none;
+	}
+}
+.time-game-check__switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 32px;
+
+	& .time-game-check__checkbox {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+.time-game-check__slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $second-color;
+	-webkit-transition: 0.4s;
+	border-radius: 34px;
+	transition: 0.4s;
+
+	&:before {
+		position: absolute;
+		content: '';
+		height: 24px;
+		width: 24px;
+		left: 4px;
+		bottom: 4px;
+		background-color: #fff;
+		-webkit-transition: 0.4s;
+		border-radius: 50%;
+		transition: 0.4s;
+	}
+}
+.time-game-check__checkbox:checked + .time-game-check__slider {
+	background-color: $main-color;
+}
+.time-game-check__checkbox:focus + .time-game-check__slider {
+	box-shadow: 0 0 1px $main-color;
+}
+.time-game-check__checkbox:checked + .time-game-check__slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+}
+.time-game-adjust__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 24px;
+}
+.time-game-adjust__button {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #000;
+	&:hover {
+		background-color: $main-color;
+	}
+}
+
+.default-settings-button {
+	margin: 0 auto;
+	max-width: 280px;
+	width: 100%;
+	height: 65px;
+	font-size: $mobileH3;
+	font-weight: $medium;
+	border-radius: 50px;
+	border: 1px solid #fff;
+	transition: all 0.5s ease;
+	&:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	&:active {
+		background-color: $main-color;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.settings-buttons {
+		flex-wrap: wrap-reverse;
+	}
+}
