@@ -1,0 +1,65 @@
+.answer-modal__content {
+  gap: 24px;
+}
+.answer-modal__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.answer-modal__image {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  flex-shrink: 0;
+  background-image: url('https://raw.githubusercontent.com/alyanoyigor/image-data/master/img/0.jpg');
+}
+.answer-modal__result {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  .answer-modal__bool {
+    font-size: 54px;
+  }
+}
+.answer-modal__picture-name {
+  text-align: center;
+  font-size: $mobileH1;
+  font-weight: $medium;
+}
+.answer-modal__author-year {
+  font-size: $mobileH4;
+}
+.next-question-button {
+  background-color: $main-color;
+  color: #000;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  height: 62px;
+  font-size: $button;
+}
+.hide {
+  display: none;
+}
+#answer-true {
+  color: $success-color;
+}
+#answer-false {
+  color: $error-color;
+}
+@media screen and (min-width: 480px) {
+  .answer-modal__image {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .answer-modal__image {
+    height: 500px;
+  }
+}
