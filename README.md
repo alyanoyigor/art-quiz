@@ -1,4 +1,4 @@
-# Art Quiz ([`LOOK CLOSER`](https://alyanoyigor.github.io/art-quiz/))
+# Art Quiz (<a href="https://alyanoyigor.github.io/art-quiz/" target="_blank">`LOOK CLOSER`</a>)
 
 ## Test your knowledge of famous artists' masterpieces with Art Quiz App!
 ![Art Quiz](https://user-images.githubusercontent.com/85354736/163354370-d8787ac2-ec5e-4cef-8dc8-0e3ca6796f31.png)
