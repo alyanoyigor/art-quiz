@@ -1,5 +1,4 @@
 export const categoryPages = {
-	categoryArtists: 'categoryArtists',
-	categoryPictures: 'categoryPictures',
+  categoryArtists: 'categoryArtists',
+  categoryPictures: 'categoryPictures',
 };
-

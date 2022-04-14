@@ -1,25 +1,31 @@
 let volumeValue = 0;
 let isTimerOn = false;
 let timerValue = 20;
+
 export const getVolumeValue = () => {
-	return volumeValue;
+  return volumeValue;
 };
+
 export const setVolumeValue = (value) => {
-	return (volumeValue = value);
+  return (volumeValue = value);
 };
+
 export const getIsTimerOn = () => {
-	return isTimerOn;
+  return isTimerOn;
 };
 export const setIsTimerOn = (value) => {
-	return (isTimerOn = value);
+  return (isTimerOn = value);
 };
+
 export const getTimerValue = () => {
-	return timerValue;
+  return timerValue;
 };
+
 export const setTimerValue = (value) => {
-	return (timerValue = value);
+  return (timerValue = value);
 };
+
 export const changeStyleInput = (elem) => {
-	const percentPlayerValue = (elem.value * 100) / elem.max;
-	elem.style.background = `linear-gradient(to right, #e7fc0b 0%, #e7fc0b ${percentPlayerValue}%, #CDCDCD ${percentPlayerValue}%, #CDCDCD 100%`;
+  const percentPlayerValue = (elem.value * 100) / elem.max;
+  elem.style.background = `linear-gradient(to right, #e7fc0b 0%, #e7fc0b ${percentPlayerValue}%, #CDCDCD ${percentPlayerValue}%, #CDCDCD 100%`;
 };
